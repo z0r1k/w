@@ -1,3 +1,9 @@
 {
-  "square": 200
+  "square": 200,
+  "area_width": 500,
+  "area_height": 300,
+  "viewport_width": 225,
+  "viewport_height": 215,
+  "x": 400,
+  "y": 240
 }

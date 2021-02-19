@@ -4,30 +4,42 @@ I didn't manage to do the task completely and to show how would I usually do the
 
 Here you can find some basic folder setup and config file which is useless atm because it has only one configuration option.
 
-I wanted to do this task as sort of CLI application and config would have default values while they could be overwritten by 
+I wanted to do this task as sort of CLI application and config would have default values while they could be overwritten by
 CLI's arguments passed to the script via flags.
 Had no time to deal with `process.argv` or using any library for it.
 
-Also there is no logger so you wouldn't find `pino` or `winston` here. 
+Also there is no logger so you wouldn't find `pino` or `winston` here.
 No `nvm` or `engines` configuration, no `eslint` and `prettier`.
 
-TypeScript could be handy here to define types and function interfaces, but it is also not there. 
+TypeScript could be handy here to define types and function interfaces, but it is also not there.
 
-Also you won't see much in term of `git log` because i created the repo last minute and pushed everything under "initial commit", 
+Also you won't see much in term of `git log` because i created the repo last minute and pushed everything under "initial commit",
 so no PR branch history, squashing and other things.
 
-And btw there are no tests as well. I actually wanted to do `jest` and use it entrypoint, 
-but again I got a bit stuck with second part of the task and lost a lot of time. 
- 
+And btw there are no tests as well. I actually wanted to do `jest` and use it entrypoint,
+but again I got a bit stuck with second part of the task and lost a lot of time.
+
 So basically you won't much here *sigh*. Sorry.
 
 Ah, yes, there is `uuid/v4` package! Yay! (Actually not yay at all 😞)
 
-If you still wanna run this ... (you name it), just do `npm start` 
+If you still wanna run this ... (you name it), just do `npm start`
 and it will run on fixed values which could be changed in `./src/main.js`.
 
-OK, nuff said. 
+OK, nuff said.
 
 Have a lovely day. I hope it is better than mine.
 
 Cheers.
+
+**~~~ UPD ~~~**
+
+I've cheated and added some more love to the code afterwards to feel better over the weekend.
+
+Help: `npm start -- -h`
+
+Example of command: `npm start -- --aw=550 --ah=350 --sq=200 --vw=125 --vh=75 --xp=400 --yp=200`
+
+Tests: `npm test` for very simple tests example
+
+P.S. Still no TS, but I am a bit happier now
