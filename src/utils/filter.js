@@ -37,6 +37,7 @@ module.exports = (tiles = [], {area_width, area_height} = {}, {viewport_width, v
 
   let result = []
 
+  // edge cases firt
   if (x === 0 && y === 0) {
     const numHorizontal = viewport_width > square_dimensions ? Math.ceil(viewport_width / square_dimensions) : 1
     const numVertical = viewport_height > square_dimensions ? Math.ceil(viewport_height / square_dimensions) : 1
@@ -54,12 +55,16 @@ module.exports = (tiles = [], {area_width, area_height} = {}, {viewport_width, v
         return (tile.x < numHorizontal * square_dimensions) && (tile.y < numVertical * square_dimensions)
       })
     // }
-  } else if (x === area_width && y === area_height) {
+  }
+  // second edge case...
+  else if (x === area_width && y === area_height) {
     const numHorizontal = viewport_width > square_dimensions ? Math.ceil(viewport_width / square_dimensions) : 1
     const numVertical = viewport_height > square_dimensions ? Math.ceil(viewport_height / square_dimensions) : 1
 
-
+    // ... maybe it makes sense to do that
   }
+
+  // TODO go read how to find out is one rectangle fits in to a square around it... shame on you for not remembering it
 
   return result
 }
