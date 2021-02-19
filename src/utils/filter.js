@@ -37,11 +37,11 @@ module.exports = (tiles = [], {area_width, area_height} = {}, {viewport_width, v
 
   let result = []
 
-  // edge cases firt
-  if (x === 0 && y === 0) {
-    const numHorizontal = viewport_width > square_dimensions ? Math.ceil(viewport_width / square_dimensions) : 1
-    const numVertical = viewport_height > square_dimensions ? Math.ceil(viewport_height / square_dimensions) : 1
+  const numHorizontal = viewport_width > square_dimensions ? Math.ceil(viewport_width / square_dimensions) : 1
+  const numVertical = viewport_height > square_dimensions ? Math.ceil(viewport_height / square_dimensions) : 1
 
+  // edge cases first
+  if (x === 0 && y === 0) {
     // if (numHorizontal === 1 && numVertical === 1) {
     //   result.push(tiles[0])
     // } else if (numHorizontal > 1 && numVertical === 1) {
@@ -58,9 +58,6 @@ module.exports = (tiles = [], {area_width, area_height} = {}, {viewport_width, v
   }
   // second edge case...
   else if (x === area_width && y === area_height) {
-    const numHorizontal = viewport_width > square_dimensions ? Math.ceil(viewport_width / square_dimensions) : 1
-    const numVertical = viewport_height > square_dimensions ? Math.ceil(viewport_height / square_dimensions) : 1
-
     // ... maybe it makes sense to do that
   }
 
