@@ -1,0 +1,14 @@
+{
+  "name": "wonder",
+  "version": "1.0.0",
+  "description": "Wonder-full challenge",
+  "main": "main.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Hooman",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^8.3.2"
+  }
+}
