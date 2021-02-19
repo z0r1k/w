@@ -42,23 +42,18 @@ module.exports = (tiles = [], {area_width, area_height} = {}, {viewport_width, v
 
   // edge cases first
   if (x === 0 && y === 0) {
-    // if (numHorizontal === 1 && numVertical === 1) {
-    //   result.push(tiles[0])
-    // } else if (numHorizontal > 1 && numVertical === 1) {
-    //   result = tiles.filter((tile) => tile.x <= numHorizontal * square_dimensions)
-    // }
-    // else if (numHorizontal === 1 && numVertical > 1) {
-    //   result = tiles.filter((tile) => tile.y <= numVertical * square_dimensions)
-    // }
-    // else {
-      result = tiles.filter((tile) => {
-        return (tile.x < numHorizontal * square_dimensions) && (tile.y < numVertical * square_dimensions)
-      })
-    // }
+    result = tiles.filter((tile) => {
+      return (tile.x < numHorizontal * square_dimensions) && (tile.y < numVertical * square_dimensions)
+    })
   }
   // second edge case...
   else if (x === area_width && y === area_height) {
-    // ... maybe it makes sense to do that
+    const left_top_viewport_x = area_width - viewport_width
+    const left_top_viewport_y = area_height - viewport_height
+
+    result = tiles.filter((tile) => {
+      return (left_top_viewport_x - tile.x < square_dimensions) && (left_top_viewport_y - tile.y < square_dimensions)
+    })
   }
 
   // TODO go read how to find out is one rectangle fits in to a square around it... shame on you for not remembering it

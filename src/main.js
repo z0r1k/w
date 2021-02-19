@@ -10,11 +10,11 @@ const filter_space = require('./utils/filter')
     area_width,
     area_height,
   }, {
-    viewport_width: 125,
-    viewport_height: 75
+    viewport_width: 225,
+    viewport_height: 215
   }, {
-    x: 0,
-    y: 0
+    x: 500,
+    y: 300
   })
   console.log('visible tiles', visibleTiles)
 
