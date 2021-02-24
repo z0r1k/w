@@ -1,4 +1,4 @@
-# [Welcome to the Wonder Challenge](https://www.notion.so/Welcome-to-the-Wonder-Challenge-dbd8a748723f4f0088aaf046124090e8)
+# Welcome to the W Challenge
 
 I didn't manage to do the task completely and to show how would I usually do the project from scratch. I am sorry about it.
 

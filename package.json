@@ -1,7 +1,7 @@
 {
-  "name": "wonder",
+  "name": "Won",
   "version": "0.0.1",
-  "description": "Wonder-full challenge",
+  "description": "",
   "main": "src/main.js",
   "scripts": {
     "start": "node ./src/main.js",
@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git@github.com:z0r1k/wonder.git"
   },
-  "homepage": "https://www.notion.so/Welcome-to-the-Wonder-Challenge-dbd8a748723f4f0088aaf046124090e8",
+  "homepage": "https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Wonder_Woman.jpg/250px-Wonder_Woman.jpg",
   "author": "Hooman",
   "license": "ISC",
   "dependencies": {
