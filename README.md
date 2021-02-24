@@ -1,4 +1,4 @@
-# Welcome to the W Challenge
+# Welcome to the W
 
 I didn't manage to do the task completely and to show how would I usually do the project from scratch. I am sorry about it.
 
